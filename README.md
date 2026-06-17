@@ -5,7 +5,7 @@
 - Unity 버전: `2022.3.62f2` (LTS)
 - 실행 방법:
   1. Unity Hub에서 `2022.3.62f2`로 프로젝트를 엽니다.
-  2. `Assets/Scenes/SampleScene.unity`를 열고 Play합니다.
+  2. `Assets/Scenes/Lobby.unity`를 열고 Play합니다.
   3. 부팅 시 `Managers`가 Google Sheet에서 스펙 데이터를 다운로드(Item/Attendence/AttendanceReward/Config)한 뒤 `UI_Lobby`를 띄웁니다. "출석부" 버튼 → `UI_Attendance` 팝업에서 현재 노출 대상인 출석부만 보이고, 각 항목을 클릭하면 `UI_AttendanceDetail`에서 Day별 보상과 출석 버튼을 확인할 수 있습니다.
   4. 스펙 데이터 컬럼 구조를 바꾸려면 `Tools > Spec Data Generator`(에디터 메뉴)에서 재생성합니다 (변경하면서 테스트 해보시면 좋을 것 같습니다).
   스펙 시트 주소: https://docs.google.com/spreadsheets/d/1tKxQN-2wySfsCBaI9szU_itPk7Ob_MWZs4R0lKhvs-Y/edit?gid=17208319#gid=17208319
