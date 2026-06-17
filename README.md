@@ -63,7 +63,7 @@ UI_Lobby → UI_Attendance(목록) → UI_AttendanceDetail(상세, 출석 버튼
 | `AttendanceCheckInRecord` / `GetHistory()` | 체크인 1건의 이력 레코드(언제/어떤 출석부/며칠차/무슨 보상) — CS 검증용 |
 | `CheatToolWindow` (Editor 전용) | `Tools > Cheat Tool` 메뉴. 데이터 전체 삭제, 하루 경과 시뮬레이션, 이력 로그 출력, 저장소 전환/미션 데모 |
 | `ISaveStore` / `PlayerPrefsSaveStore` / `MockRemoteSaveStore` | 저장 매체 추상화. `SaveManager`는 JSON 직렬화만 책임지고 실제 read/write는 이 인터페이스에 위임 |
-| `MissionEventAdapter` / `MissionManager` | "미션 이벤트가 추가된다면?" 질문에 대한 실제 동작 증거. `AttendanceManager`와 동일한 패턴(어댑터 등록 + `RewardManager.Grant` 위임) |
+| `MissionEventAdapter` / `MissionManager` | "미션 이벤트가 추가된다면?" 상황 추가 가정에 대한 실제 동작 증거. `AttendanceManager`와 동일한 패턴(어댑터 등록 + `RewardManager.Grant` 위임) |
 
 ### 2.3 데이터 모델 (Google Sheet, 코드 생성기로 자동 생성됨)
 
